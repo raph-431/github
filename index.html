@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="stylesheet" type="text/css" href="styles.css" />
+
+</head>
+
+
+<body>
+    <div class="header">
+        <div class="changer" id="changer"> >> </div>
+        <div class="title">
+            rapha-nyc /// code+art /// generative and ai projects
+        </div>
+        <div class="settings" id="settings">?</div>
+    </div>
+
+<div class="keyboard-container" id="keyboard-container">
+    <img src="./img/keyboard1.jpg" alt="Keyboard Navigation" class="keyboard-image">
+    
+    <div class="infotext" id="infotext" style="position: absolute; top: 227px; left: 300px"> </div>
+
+    <!-- Overlay divs representing keys -->
+    <div class="key" id="Rkey"   data-image="img/RAMpopup.jpg" data-link="https://www.fxhash.xyz/generative/30728"
+    data-info-text="Project: RANDOM ACCESS MEMORY {generative, 3D, animated, 2024}">
+    </div>
+    <div class="key" id="Lkey"  data-image=" img/leitmotiv-popup.jpg" data-link="https://www.fxhash.xyz/generative/0x81EA11b6FcFf314800067a2DeC9E00E482819714"
+        data-info-text="Project: LEITMOTIV {generative, 3D, animated, 2024}">
+    </div>
+    <div class="key" id="Mkey" data-image=" img/mirror-popup.jpg"
+        data-link="https://www.fxhash.xyz/generative/29345"
+        data-info-text="Project : mirror  {generative, 2023}"></div>
+    
+    <div class="key" id="Zkey"  data-image=" img/regenerate-popup.jpg" 
+                data-link="https://www.fxhash.xyz/generative/28989"
+        data-info-text="Project: regenerate {generative, 2023}"></div>
+    
+
+    <div class="key" id="Bkey" data-image="img/inside.jpg" data-link="https://gallery.so/rapha_nyc"
+        data-info-text="Biography">
+    </div>
+<div class="key" id="Akey"  data-image="img/facet.jpg" data-link="https://objkt.com/collections/KT1AfmVexFg26wgbKcuAVV1GC833DfNM5Stu"
+    data-info-text="AI works: 2022 - ongoing">
+</div>
+<div class="key" id="Pkey"  data-image="img/penumbra_popup.jpg"
+    data-link="https://koda.art/ahp/drops/penumbra" data-info-text="Projects: Penumbra {generative, evolving, 2024}">
+</div>
+<div class="key" id="Returnkey" style="width: 90px;" data-image=" img/penumbra_popup.jpg" data-link=""
+    data-info-text="works and socials">
+</div>
+    
+    <!-- Add more divs for each interactive area -->
+
+    <div id="Rpopup" class="popup" style="top: 300px; left: 550px;  ">
+    <img id="Rpopup-img" style="width: 200px; height: 200px;" class="popup-img" src="" alt="Project Image">
+    <div class="popup-text">
+        <b>Random Access Memory</b> is a generative Visual Poetry project that invites the viewer to a reminiscence journey.
+        <br><br><small>Curated by and co-created with Atelier. Platform: fxhash.</small>
+    </div>
+    </div>
+    <div id="Lpopup" class="popup" style="top: 300px; left: 850px">
+        <img id="Lpopup-img" style="width: 200px; height: 200px;" class="popup-img" src="" alt="Project Image">
+        <div class="popup-text">
+            <b>LEITMOTIV</b> is a 3d generative project based on natural rhythms and patterns. It explores
+            the repeated opening and closing of geometric forms and offers a meditative experience.
+            <br><br><small>Platform: fxhash on Base.</small>
+        </div>
+    </div>
+    <div id="Mpopup" class="popup" style="top: 400px; left: 470px">
+        <img id="Mpopup-img" style="width: 200px; height: 200px;" class="popup-img" src="" alt="Project Image">
+        <div class="popup-text">
+            <b>-- mirror --</b> is a generative project inspired by New York City's skyline
+            and Elmgreen & Dragset's "The Hive", an inverted cityscape.
+            <br><br><small>Platform: fxhash</small>
+        </div>
+    </div>
+    <div id="Zpopup" class="popup" style="top: 400px; left: 430px">
+        <img id="Zpopup-img" style="width: 200px; height: 200px;" class="popup-img" src="" alt="Project Image">
+        <div class="popup-text">
+            <b>regenerate</b> is a generative exploration of gradients as a allegory of our inner states.
+            <br><br><small>Platform: fxhash</small>
+        </div>
+    </div>
+<div id="Bpopup" class="popup" style="top: 250px; left: 630px; width: 250px; height: auto">
+        <img id="Bpopup-img" style="width: 2px; height: auto; display:none" class="popup-img" src="" alt="Project Image">
+        <div class="popup-text">
+        <b>biography</b>
+        <br><br>Rapha has been creating with code and multimedia tools since 2002, 
+    having studied algorithms and formal systems. 
+        <br><br>His work has been exhibited at the Centre Pompidou (Paris), the NFT Museum (Seattle), and Beeple's Studio (NC).
+        <br><br>He's also a passionate <a href="https://gallery.so/rapha_nyc">collector</a> of generative and AI art,
+        and, for good measure, an inline skater.
+        </div>
+    </div>
+<div id="Apopup" class="popup" style="top: 270px; left: 165px;">
+    <img id="Apopup-img" style="width: 200px; height: 200px;" class="popup-img" src="" alt="Project Image">
+    <div class="popup-text">
+        Rapha has been exploring <b>text-to-image AI</b> since 2022, focusing mostly on abstract outputs, and often using 
+        code-generated images as a starting point.
+    </div>
+</div>
+<div id="Ppopup" class="popup" style="top: 220px; left: 880px;">
+    <img id="Project" style="width: 200px; height: 200px;" class="popup-img" src="" alt="Project Image">
+    <div class="popup-text">
+        <b>Penumbra</b> explores the idea of a slowly evolving render: each output is produced by a directional "shadow" which
+        revolves around a central point over a 1 year period, producing a total of 365 images.
+    <br><br>
+    <small>Curated by Koda.art</small>
+    </div>
+</div>
+<div id="Returnpopup" class="popup" style="top: 280px; left: 1035px; width:120px; height:auto">
+    <img id="Project" style="width: 1px; height: 1px; margin:0px; padding:0px; display:none" class="popup-img" src="" alt="Project Image">
+    <div class="popup-text" style="text-align: left; padding:5px">
+       <b>works</b>
+      <br> <br>on <a href="https://www.fxhash.xyz/u/rapha_nyc" target="_blank">fxhash</a>
+      <br>on  <a href="https://objkt.com/users/tz1QqisMd8fKdsgN5uQyjA6UZ4GE3jhEz8M9" target="_blank">objkt</a>
+      <br>on <a href="https://koda.art/ahp/u/1dtaNCHcmrcehMgQYbCNH1vcYdNScTUkPxssuRewuGUppR8" target="_blank">koda</a>
+      <br>on <a href="https://exchange.art/rapha-nyc/nfts" target="_blank">exchange</a>
+      <!-- <br>  <a href="https://gallery.so/rapha_nyc" target="_blank">gallery</a> -->
+      <br><br> <b>social media</b>
+      <br>
+      <br> <a href="https://x.com/rapha_nyc" target="_blank">x (twitter)</a>
+      <br>  <a href="https://warpcast.com/rapha-nyc" target="_blank">farcaster</a>
+    <br><a href="https://rodeo.club/@rapha-nyc/posts" target="_blank">rodeo</a>
+      <br><a href="https://www.instagram.com/raphanyc/" target="_blank">instagram</a>    
+    </div>
+</div>
+<div id="game-popup" class="game-popup" style="width:580px; height:420px; top: 150px; display: none;">
+        <div id="game-info" style="color:rgba(255,255,255,0.8); height:20px;  text-align:center; font-size:14px; font-family:monospace">use arrow keys to play</div>
+    <canvas id="gameCanvas" width="580" height="400">
+    </canvas>
+</div>
+</div>
+    <div class="footer"></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+

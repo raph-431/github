@@ -1,0 +1,189 @@
+.keyboard-container {
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
+    position: relative;
+    /* width: 100%; */
+    /* height: 100%; */
+    max-width: 3000px;
+    min-width: 800px;
+    /* Limit maximum size */
+    margin: auto;
+    padding: 0;
+    /* Center the container */
+    display: block;
+}
+
+html {
+    background-color: FF3333;
+}
+.header {
+display: flex;
+    /* Use flexbox */
+    justify-content: space-between;
+    /* Space between the divs */
+    /* align-items: center; */
+    /* Center vertically */
+   
+}
+.settings {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    text-align: right;
+    color: #fff;
+    font-size: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+    cursor: help;
+}
+.title {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 1;
+}
+.changer {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    text-align: right;
+    color: #fff;
+    font-size:10px;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    cursor: pointer;
+}
+
+body {
+    background-color: #FF3333;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    /* Add this line to ensure full height */
+}
+ .infotext {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    text-align: center;
+    width: 740px;
+    color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 48, 48, 0.1);
+    font-size: 14px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    /* display: inline-block; */
+    display : none;
+    
+ }
+
+ .infotext-container {
+     width: 400px;
+     /* Adjust as needed */
+     overflow: hidden;
+     white-space: nowrap; 
+     /* animation: scroll-left 15s linear infinite; */
+ }
+ 
+.keyboard-image {
+    width: 1400px;
+    display: block;
+    /* box-align: center; */
+    /* align-self: center; */
+    /* align: left; */
+    /* margin: auto; */
+    /* opacity: 0.7; */
+}
+
+.key {
+    position: absolute;
+    width: 40px;
+    height:40px;
+    background-color: rgba(120, 255, 255, 0.25);
+    transition: background-color 0.3s, transform 0.3s;
+    cursor: pointer;
+}
+.key:hover {
+    background-color: rgba(0, 0, 255, 0.2);
+    /* Change color on hover */
+    /* transform: scale(1.1); */
+    /* Slightly enlarge on hover */
+}
+
+
+
+
+
+/* Styling for the popup */
+
+.popup {
+    position: absolute;
+    display: none;
+    /* overflow: hidden; */
+    /* Initially hidden */
+    background-color: #000000;
+    border: 1px solid #000000;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+    z-index: 10;
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
+}
+/* .popup-content {
+    display: flex;
+    height: 100%;
+} */
+.popup-text {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+    font-size: 14px;
+    flex: 1;
+    padding: 3px;
+    /* color: white; */
+    color: black;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, .2);
+    /* Adjust text color as needed */
+    overflow-y: auto;
+    /* background-color: rgba(0, 0, 0, 0.6); */
+    background-color: rgba(255, 255, 255, 0.8);
+    /* In case of long text */
+}
+
+.popup-text a {
+    color: #030303;
+    /* Change this to your desired link color */
+    text-decoration: underline;
+    /* Optional: adds underline to links */
+}
+
+.popup.show {
+    opacity: 1;
+}
+
+.popup-img {
+    /* display: block; */
+    /* width: 200px;
+    height: auto; */
+    object-fit: contain;
+    cursor: pointer;
+    /* Pointer cursor for clickable image */
+}
+
+.game-popup {
+    display: none;
+    position: absolute;
+    top: 200px;
+    left: 300px;
+    z-index: 1000;
+    background-color: black;
+    border: 1px solid black;
+    padding: 5px;
+}
