@@ -569,7 +569,7 @@ function startGame() {
             }, 1000);
         }
     }
-    function gameover() {
+    function gameover() { // comment out
         const gameInfo = document.getElementById('game-info');
         gameInfo.textContent = 'game over -- YOU WIN!';
         dx = dy = 0;
