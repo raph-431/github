@@ -15,7 +15,7 @@ body {
 }
 
 main {
-    padding-top: 160px;
+    padding-top: 180px;
     /* padding-bottom: 100px; */
 }
 
@@ -24,37 +24,56 @@ header {
     top: 0;
     width: 100%;
     /* height: 240px; */
-    background-color: #e33;
+    /* background-color: #e33; */
+    border-bottom: 2px solid #e33;
     color: #eee;
     padding-left: 10px;
     padding-right: 5px;
     padding-top: 1px;
     padding-bottom: 2px;
+    background-image: url(img/keyboard3.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* text-shadow: 0 0 10px #000; */
+    
+    /* background-blend-mode:; */
+    /* background-clip: text; */
+    /* -webkit-background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
 }
 
-header h1 {
+header h2 {
     text-align: center;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: #eee;
 }
-
+/* header nav {
+    display: inline;
+} */
 header nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 4px;
+    list-style-type: none;
+    padding-top: 5px;
 }
 
 header nav ul li {
-    margin: 0 10px;
+    
+    margin: 2px 2px;
+    margin-left: 0px;
 }
 
 header nav ul li a {
     color: #eee;
+    background-color: #e33;
     text-decoration: none;
-    padding: 5px 5px;
+    padding: 2px 2px;
 }
 
 header nav ul li a:hover {
-    background-color: #555;
+    background-color: #ccc;
 }
 
 img {
@@ -78,7 +97,7 @@ img {
 }
 
 section {
-    margin: 20px 0;
+    margin: 2px 0;
     background-color: #333;
     color: #eee;
 }
