@@ -122,10 +122,18 @@ section h2 {
     margin-bottom: 10px;
 }
 
+section hr {
+    border-color: #e33;
+    border-width: 1px;
+    border-style:solid;
+}
+
 section .title {
     font-size: 1.0em;
     font-weight: bold;
     margin-bottom: 2px;
+    align-items: center;
+    text-align: center;
 }
 
 section p {
