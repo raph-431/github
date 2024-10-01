@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    background-color: #e33;
+    /* padding-top: 160px; */
+    /* padding-bottom: 100px; */
+        /* padding-bottom: 40px; */
+            /* Adjust based on the height of your footer */
+}
+
+main {
+    padding-top: 220px;
+    padding-bottom: 100px;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* height: 240px; */
+    background-color: #e33;
+    color: #eee;
+    padding-left: 10px;
+    padding-right: 5px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 5px;
+}
+
+header nav ul li {
+    margin: 0 5px;
+}
+
+header nav ul li a {
+    color: #eee;
+    text-decoration: none;
+    padding: 5px 5px;
+}
+
+header nav ul li a:hover {
+    background-color: #555;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 0;
+}
+
+.foot {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    padding: 5px;
+}
+
+section {
+    margin: 20px 0;
+    background-color: #333;
+    color: #eee;
+}
+
+section a {
+    color: #f00;
+    /* Default link color within section */
+    text-decoration: underline;
+    /* Default link decoration within section */
+}
+
+section a:visited {
+    color: #a55;
+    /* Color for visited links within section */
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+section .title {
+    font-size: 1.0em;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+section p {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+footer {
+    background-color: #e33;
+    color: #fff;
+    position: fixed;
+    height: 100px;
+    bottom: 0;
+    width: 100%;
+    padding: 2px 0;
+    padding-top: 1px;
+    text-align: center;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+    }
+}

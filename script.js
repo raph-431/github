@@ -1,5 +1,15 @@
+// Check if the user is on a mobile device
+function isMobile() {
+    return /Mobi|Android/i.test(navigator.userAgent);
+}
 
-    let activekeyboard = 1; // index of the active keyboard
+// Redirect to the mobile page if on a mobile device
+if (isMobile()) {
+    window.location.href = 'mobile.html'; // Replace 'mobile.html' with your mobile page URL
+}
+ 
+
+let activekeyboard = 1; // index of the active keyboard
 activekeyboard = Math.floor(Math.random() * 3) + 1;
 let firsttime = true;
 let gameisvisible = false;
@@ -19,10 +29,11 @@ function updateLastInteractionTime() {
     const popups = document.getElementsByClassName('popup');
     const popupImgs = document.getElementsByClassName('popup-img');
     const infoPositions = [ {top: '227px', left: '300px'},
-     {top: '100px', left: '300px'}, {top: '100px', left: '300px'}];
+        { top: '100px', left: '300px' }, { top: '100px', left: '300px' },
+        { top: '227px', left: '300px' }];
      const infoColors = ['rgba(255, 255, 255, 0.8)', 'rgba(0, 0, 0)',
-        'rgba(255, 255, 255)' ];
-     const bgColors = ['#FF3333', '#ECE2CE', '#3B3641'];
+         'rgba(255, 255, 255)', 'rgba(255, 255, 255, 0.8)' ];
+const bgColors = ['#FF3333', '#ECE2CE', '#3B3641', '#FF3333'];
      const keyPositions = [
             // keyboard 1
            [ { id: 'Rkey', top: '360px', left: '505px' },
@@ -50,7 +61,16 @@ function updateLastInteractionTime() {
              { id: 'Bkey', top: '415px', left: '610px' },
              { id: 'Akey', top: '355px', left: '340px' },
              { id: 'Pkey', top: '295px', left: '925px' },
-             { id: 'Returnkey', top: '355px', left: '1060px', width: '90px' }]
+             { id: 'Returnkey', top: '355px', left: '1060px', width: '90px' }],
+         // keyboard 4 === keyvoard 1
+         [{ id: 'Rkey', top: '360px', left: '505px' },
+             { id: 'Lkey', top: '400px', left: '805px' },
+             { id: 'Mkey', top: '450px', left: '675px' },
+             { id: 'Zkey', top: '450px', left: '385px' },
+             { id: 'Bkey', top: '450px', left: '585px' },
+             { id: 'Akey', top: '400px', left: '370px' },
+             { id: 'Pkey', top: '360px', left: '845px' },
+             { id: 'Returnkey', top: '400px', left: '945px', width: '90px' }],
         ];
 
      function positionKeys() {
@@ -207,6 +227,9 @@ function updateLastInteractionTime() {
             swapBackgroundImage();
         } else if (key === '3') {
             activekeyboard = 3;
+            swapBackgroundImage();
+        } else if (key === '4') {
+            activekeyboard = 4;
             swapBackgroundImage();
         }
         if (key === '?' || key === '/') {
