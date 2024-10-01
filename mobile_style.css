@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    line-height: 1.6;
+    line-height: 1.4;
     background-color: #e33;
     /* padding-top: 160px; */
     /* padding-bottom: 100px; */
@@ -15,7 +15,7 @@ body {
 }
 
 main {
-    padding-top: 220px;
+    padding-top: 160px;
     /* padding-bottom: 100px; */
 }
 
@@ -28,7 +28,7 @@ header {
     color: #eee;
     padding-left: 10px;
     padding-right: 5px;
-    padding-top: 5px;
+    padding-top: 1px;
     padding-bottom: 2px;
 }
 
@@ -40,11 +40,11 @@ header nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    padding: 5px;
+    padding: 4px;
 }
 
 header nav ul li {
-    margin: 0 5px;
+    margin: 0 10px;
 }
 
 header nav ul li a {
